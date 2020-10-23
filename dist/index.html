@@ -10,24 +10,40 @@
 	</head>
 	<body>
 		<main>
-			<section class="hero is-primary">
+			<section class="hero custom-hero">
 				<div class="hero-body">
-					<div class="container">
+					<div class="wrapper">
 						<h1 class="title">Predložky a spojky</h1>
 						<h2 class="subtitle">Na koniec riadku nepatria :)</h2>
 					</div>
 				</div>
 			</section>
 
-			<section class="container">
+			<section class="wrapper">
+				<div class="container py-5">
+					<p>
+						Jednohláskové predložky (neslabičné k, K, s, S, v, V, z, Z, slabičné
+						o, O, u, U) na&nbsp;spojky (i, I, A, na&nbsp;tvorí výnimku) nemůžu
+						byť posledným písmenom riadku. Podobne nemôže byť na konci riadku
+						iniciálka krstného mena alebo titul oddelene od priezviska,
+						pomenovanie Obrázok alebo Tabuľka, tak isto nemôžeme oddeliť číslicu
+						na&nbsp;skratku jednotky.<sup>1</sup>
+					</p>
+
+					<p>
+						<sup>1</sup><small>Zdroj: http://sevcovic.extel.sk/TypoMin1.0.pdf</small>
+					</p>
+				</div>
+			</section>
+
+			<section class="wrapper">
 				<div class="columns">
 					<div class="column my-5">
 						<form class="form-column-one">
 							<div class="field">
 								<label for="inputText" class="label">Zdrojový text</label>
 								<div class="control">
-									<textarea id="inputText" class="textarea">
-Spadla z kona na zem aj s vybavenim.</textarea
+									<textarea id="inputText" class="textarea" placeholder="Sem vložte text, ktorý chcete upraviť."></textarea
 									>
 								</div>
 							</div>
@@ -76,6 +92,9 @@ Spadla z kona na zem aj s vybavenim.</textarea
 		<script src="main.js">
 			/** Empty goes here */
 		</script>
-		<script src="https://kit.fontawesome.com/0e21a8cc17.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/0e21a8cc17.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

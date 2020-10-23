@@ -1,3 +1,7 @@
+html {
+  font-size: 18px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns:
@@ -6,4 +10,14 @@
 
 .wrapper>* {
   grid-column: 2;
+}
+
+.custom-hero {
+  background: #fffaf6 url(images/2.jpg) no-repeat fixed top right;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-hero {
+    background: #fffaf6;
+  }
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Predlozky + Spojky | LabZone</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<main>
+			<section class="hero custom-hero">
+				<div class="hero-body">
+					<div class="wrapper">
+						<h1 class="title">Predložky a spojky</h1>
+						<h2 class="subtitle">Na koniec riadku nepatria :)</h2>
+					</div>
+				</div>
+			</section>
+
+			<section class="wrapper">
+				<div class="container py-5">
+					<p>
+						Jednohláskové predložky (neslabičné k, K, s, S, v, V, z, Z, slabičné
+						o, O, u, U) na&nbsp;spojky (i, I, A, na&nbsp;tvorí výnimku) nemůžu
+						byť posledným písmenom riadku. Podobne nemôže byť na konci riadku
+						iniciálka krstného mena alebo titul oddelene od priezviska,
+						pomenovanie Obrázok alebo Tabuľka, tak isto nemôžeme oddeliť číslicu
+						na&nbsp;skratku jednotky.
+					</p>
+				</div>
+			</section>
+
+			<section class="wrapper">
+				<div class="columns">
+					<div class="column my-5">
+						<form class="form-column-one">
+							<div class="field">
+								<label for="inputText" class="label">Zdrojový text</label>
+								<div class="control">
+									<textarea id="inputText" class="textarea">
+Spadla z kona na zem aj s vybavenim.</textarea
+									>
+								</div>
+							</div>
+
+							<div class="field is-grouped">
+								<div class="control">
+									<button
+										type="button"
+										id="normalizeText"
+										class="button is-link"
+									>
+										Upraviť
+									</button>
+								</div>
+							</div>
+
+							<hr />
+
+							<div class="field">
+								<label for="outputText" class="label">Upravený text</label>
+								<div class="control">
+									<textarea
+										readonly
+										class="textarea"
+										id="outputText"
+									></textarea>
+								</div>
+							</div>
+
+							<div class="field is-grouped">
+								<div class="control">
+									<button type="button" id="copyText" class="button is-small">
+										<span class="icon is-small">
+											<i class="far fa-copy"></i>
+										</span>
+										<span>Skopírovať do schránky</span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="main.js">
+			/** Empty goes here */
+		</script>
+		<script
+			src="https://kit.fontawesome.com/0e21a8cc17.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

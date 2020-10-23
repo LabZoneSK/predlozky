@@ -1,6 +1,6 @@
 import './main.css';
 
-const prepositions = ['k', 's', 'z', 'v', 'na', 'za', 'do', 'a', 'i']
+const prepositions = ['k', 'K', 's', 'S', 'v', 'V', 'z', 'Z', 'o', 'O', 'u', 'U', 'na', 'za', 'do', 'a', 'i']
 
 const normalizeText = text => {
   let normalized = text
@@ -13,18 +13,13 @@ const normalizeText = text => {
 }
 
 const copyOutput = () => {
-  /* Get the text field */
   var copyText = document.getElementById('outputText')
 
-  /* Select the text field */
   copyText.select()
   copyText.setSelectionRange(0, 99999) /*For mobile devices*/
-
-  /* Copy the text inside the text field */
   document.execCommand('copy')
 
-  /* Alert the copied text */
-  alert('Copied the text: ' + copyText.value)
+  alert('Text bol skopírovaný do schránky');
 }
 
 document
